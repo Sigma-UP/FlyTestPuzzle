@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FlyTestPuzzle.src.FlyTestPuzzle.BusinessLogic.FlyConsole
+namespace FlyTestPuzzle.BusinessLogic.FlyConsole
 {
     public interface IConsole
     {
