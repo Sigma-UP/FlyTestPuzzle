@@ -14,7 +14,7 @@ jobs:
               run: dotnet build --no-restore
 
             - name: Test
-              run: dotnet test src/FlyTestPuzzle.sln /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=TestResults/
+              run: dotnet test --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover 
 
             - name: Upload to Codecov
               uses: codecov/codecov-action@v1
